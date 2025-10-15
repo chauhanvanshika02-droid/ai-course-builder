@@ -19,6 +19,7 @@ def generate():
     level = request.form['level']
     goal = request.form['goal']
 
+
     prompt = f"""
     You are an AI course builder.
     Create a personalized course outline for someone who wants to learn "{topic}".

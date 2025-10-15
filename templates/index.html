@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Course Builder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>AI Course Builder</h1>
+    <form action="/generate" method="POST">
+        <label>Topic:</label><br>
+        <input type="text" name="topic" required><br><br>
+
+        <label>Skill Level:</label><br>
+        <select name="level">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select><br><br>
+
+        <label>Learning Goal:</label><br>
+        <textarea name="goal" rows="3" required></textarea><br><br>
+
+        <button type="submit">Generate Course</button>
+    </form>
+</body>
+</html>
